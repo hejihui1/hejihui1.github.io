@@ -5,14 +5,14 @@
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
 	
-    <meta name="keywords" content="linux搭建mysql, HTML,css,linux,hexo,matery,mysql,it测试,抱抱熊等">
-    <meta name="description" content="一、检查Linux操作系统上是否安装MySQL数据库
-rpm -qa | grep mysql //查看操作系统是否已经安装了mysql
-
-二、卸载掉原有mysql服务
-rpm -e mysql //普通删除模式
-
-rpm -e --nod">
+    <meta name="keywords" content="水贝珠宝, HTML,css,linux,hexo,matery,mysql,it测试,抱抱熊等">
+    <meta name="description" content="一、锦橙传福珠宝已倒闭
+二、小胖传福珠宝关门了
+三、欢彩珠宝不确定是否会关门，目前在营业。
+四、墨谦珠宝新店正常营业
+拼多多店铺：固定链接货品：耳饰、散珠(古法、光珠、钱币珠等)
+直播卖货：可选规格
+淘宝店铺：直播卖货：手链、项链、散珠、吊">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -47,7 +47,7 @@ rpm -e --nod">
     </style>
 
 
-    <title>linux搭建mysql | 抱抱熊博客</title>
+    <title>水贝珠宝 | 抱抱熊博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -359,12 +359,12 @@ rpm -e --nod">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://img1.baidu.com/it/u=2774884976,2492802382&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=750')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://img0.baidu.com/it/u=1561891406,1190669405&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">linux搭建mysql</h1>
+                    <h1 class="description center-align post-title">水贝珠宝</h1>
                 </div>
             </div>
         </div>
@@ -480,8 +480,8 @@ rpm -e --nod">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/linux/">
-                                <span class="chip bg-color">linux</span>
+                            <a href="/tags/%E9%BB%84%E9%87%91%E9%A5%B0%E5%93%81/">
+                                <span class="chip bg-color">黄金饰品</span>
                             </a>
                         
                     </div>
@@ -496,28 +496,28 @@ rpm -e --nod">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-28
+                    2022-09-02
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-02
+                    2022-09-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    594
+                    107
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -540,71 +540,14 @@ rpm -e --nod">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、检查Linux操作系统上是否安装MySQL数据库</p>
-<pre class="line-numbers language-none"><code class="language-none">rpm -qa | grep mysql //查看操作系统是否已经安装了mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>二、卸载掉原有mysql服务</p>
-<pre class="line-numbers language-none"><code class="language-none">rpm -e mysql //普通删除模式<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">rpm -e --nodeps mysql //强力删除模式<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>卸载命令示例：</p>
-<pre class="line-numbers language-none"><code class="language-none">[root@localhost /]# rpm -e mysql -5.1.73-8.el6_8.i686<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>三、查看yum服务器上面是否有mysql安装包，然后执行命令安装mysql服务</p>
-<p>1.在线安装mysql命令:</p>
-<pre class="line-numbers language-none"><code class="language-none">yum install -y mysql mysql-server mysql-devel<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>2.设置mysql的root账号及密码</p>
-<pre class="line-numbers language-none"><code class="language-none">mysqladmin -u root password  'root'  //给root账号设置密码为root<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>这个root账号时mysql的root账号，非linux的root账号</p>
-<p>3.启动mysql服务</p>
-<pre class="line-numbers language-none"><code class="language-none">service mysqld start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>4.登录mysql数据库服务</p>
-<pre class="line-numbers language-none"><code class="language-none">mysql -u root -p<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>四、mysql数据库的主要配置文件</p>
-<pre class="line-numbers language-none"><code class="language-none">1./etc/my.cnf //这是mysql的主要配置文件<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">2./var/lib/mysql //mysql数据库的数据库文件存放位置<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<pre class="line-numbers language-none"><code class="language-none">3./var/log //mysql数据库的日志输出存放位置<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>其中mysql.log这个文件是存放我们跟mysql数据库进行操作而产生的的一些日志信息，通过查看该日志文件，可以从中获得很多信息。</p>
-<p>mysql数据库是可以通过网络访问的，其中使用的协议是tcp/ip协议，绑定端口3306，可以通过<code>netstat  -anp</code>命令查看linux系统是否在监听3306这个端口。</p>
-<p>五、通过mysql命令行语句来导入、导出数据库文件</p>
-<blockquote>
-<p>此部分内容待补充：</p>
-</blockquote>
-<p>六、本地登录常见错误解决方法</p>
-<p><strong>本地登录1145错误解决办法：</strong></p>
-<p><img src="https://img-1311107137.cos.ap-guangzhou.myqcloud.com/img/%E5%9B%BE%E7%89%874.png"></p>
-<p><strong>1045错误命令行操作如下：</strong></p>
-<p>1.停止mysql服务: #service mysqld stop</p>
-<p>2.执行命令:#mysqld_safe –user=mysql –skip-grant-tables –skip-networking &amp;</p>
-<p>3.登录数据库:#mysql -u root mysql</p>
-<p>4.修改mysql数据库root用户名的密码为123456</p>
-<pre class="line-numbers language-none"><code class="language-none">mysql&gt; UPDATE user SET Password=PASSWORD(‘123456’) where USER=’root’;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>5.刷新数据库</p>
-<pre class="line-numbers language-none"><code class="language-none">mysql&gt; FLUSH PRIVILEGES;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>6.退出数据库</p>
-<pre class="line-numbers language-none"><code class="language-none">mysql&gt; quit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>7.重启数据库</p>
-<pre class="line-numbers language-none"><code class="language-none">#service mysqld restart<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>8.重新以新密码登录</p>
-<pre class="line-numbers language-none"><code class="language-none">#mysql -u root -p<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><strong>远程连接1130错误解决方案</strong></p>
-<p>当连接mysql数据库的时候，出现ERROR 1130 (HY000): Host ‘xxxx’ is not allowed to connect to this MySQL server的问题。解决该问题使用以下方法</p>
-<p><strong>授权法</strong></p>
-<p>例如，你想root用户使用123456密码从任何主机连接到mysql服务器的话。</p>
-<p>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘root‘@’%’ IDENTIFIED BY ‘123456’ WITH GRANT OPTION;</p>
+                <h3 id="一、锦橙传福珠宝"><a href="#一、锦橙传福珠宝" class="headerlink" title="一、锦橙传福珠宝"></a>一、锦橙传福珠宝</h3><p>已倒闭</p>
+<h3 id="二、小胖传福珠宝"><a href="#二、小胖传福珠宝" class="headerlink" title="二、小胖传福珠宝"></a>二、小胖传福珠宝</h3><p>关门了</p>
+<h3 id="三、欢彩珠宝"><a href="#三、欢彩珠宝" class="headerlink" title="三、欢彩珠宝"></a>三、欢彩珠宝</h3><p>不确定是否会关门，目前在营业。</p>
+<h3 id="四、墨谦珠宝"><a href="#四、墨谦珠宝" class="headerlink" title="四、墨谦珠宝"></a>四、墨谦珠宝</h3><p>新店正常营业</p>
+<h4 id="拼多多店铺："><a href="#拼多多店铺：" class="headerlink" title="拼多多店铺："></a>拼多多店铺：</h4><p>固定链接货品：耳饰、散珠(古法、光珠、钱币珠等)</p>
+<p>直播卖货：可选规格</p>
+<h4 id="淘宝店铺："><a href="#淘宝店铺：" class="headerlink" title="淘宝店铺："></a>淘宝店铺：</h4><p>直播卖货：手链、项链、散珠、吊坠等</p>
+<p>业务：支持旧换或者回收</p>
 
                 
             </div>
@@ -621,7 +564,7 @@ rpm -e --nod">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">派大星是一个天才</a>
+                    <a href="/about" rel="external nofollow noreferrer">何纪辉</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -631,7 +574,7 @@ rpm -e --nod">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://hejihui1.github.io/post/9e9ece7f.html">https://hejihui1.github.io/post/9e9ece7f.html</a>
+                    <a href="https://hejihui1.github.io/post/3d29a05c.html">https://hejihui1.github.io/post/3d29a05c.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -644,7 +587,7 @@ rpm -e --nod">
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">派大星是一个天才</a>
+                    <a href="/about" target="_blank">何纪辉</a>
                     !
                 </span>
             </div>
@@ -669,8 +612,8 @@ rpm -e --nod">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/linux/">
-                                    <span class="chip bg-color">linux</span>
+                                <a href="/tags/%E9%BB%84%E9%87%91%E9%A5%B0%E5%93%81/">
+                                    <span class="chip bg-color">黄金饰品</span>
                                 </a>
                             
                         </div>
@@ -1118,16 +1061,17 @@ rpm -e --nod">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/post/2d5174f5.html">
+                <a href="/post/3d29a05c.html">
                     <div class="card-image">
                         
-                        <img src="https://img1.baidu.com/it/u=1283015551,382418629&fm=253&fmt=auto&app=120&f=JPEG?w=708&h=500" class="responsive-img" alt="fiddler工具使用">
+                        <img src="https://img0.baidu.com/it/u=1561891406,1190669405&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500" class="responsive-img" alt="水贝珠宝">
                         
-                        <span class="card-title">fiddler工具使用</span>
+                        <span class="card-title">水贝珠宝</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1137,22 +1081,23 @@ rpm -e --nod">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            派大星是一个天才
+                            何纪辉
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/fiddler/">
-                        <span class="chip bg-color">fiddler</span>
+                    <a href="/tags/%E9%BB%84%E9%87%91%E9%A5%B0%E5%93%81/">
+                        <span class="chip bg-color">黄金饰品</span>
                     </a>
                     
                 </div>
@@ -1166,23 +1111,23 @@ rpm -e --nod">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/521e7fcf.html">
+                <a href="/post/8ee5a6f2.html">
                     <div class="card-image">
                         
-                        <img src="https://img2.baidu.com/it/u=2994327883,2662238555&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" class="responsive-img" alt="mysql语法笔记">
+                        <img src="https://img-1311107137.cos.ap-guangzhou.myqcloud.com/img/image-20220511144457176.png" class="responsive-img" alt="冷面天使漫画">
                         
-                        <span class="card-title">mysql语法笔记</span>
+                        <span class="card-title">冷面天使漫画</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            转载冷面天使漫画，挺有意思的一部漫画，闲暇时间可以看看。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
                             </span>
                         <span class="publish-author">
                             
@@ -1195,8 +1140,8 @@ rpm -e --nod">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/mysql/">
-                        <span class="chip bg-color">mysql</span>
+                    <a href="/tags/%E6%BC%AB%E7%94%BB/">
+                        <span class="chip bg-color">漫画</span>
                     </a>
                     
                 </div>
